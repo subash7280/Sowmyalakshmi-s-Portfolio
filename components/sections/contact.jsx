@@ -85,8 +85,8 @@ const contactMethods = [
     icon: MailIcon,
     title: 'Email Me',
     description: 'Drop me an email anytime',
-    value: 'your.email@example.com',
-    href: 'mailto:your.email@example.com',
+    value: 'sowmyamano0130@gmail.com',
+    href: 'mailto:sowmyamano0130@gmail.com',
     color: 'from-teal-500 to-cyan-500',
   },
   {
@@ -101,7 +101,7 @@ const contactMethods = [
     icon: MapPinIcon,
     title: 'Location',
     description: 'Based in',
-    value: 'City, State, Country',
+    value: 'Bengaluru, Karnataka, India',
     href: null,
     color: 'from-purple-500 to-pink-500',
   },
@@ -109,16 +109,18 @@ const contactMethods = [
     icon: CalendarIcon,
     title: 'Book a Call',
     description: 'Schedule a meeting',
-    value: 'calendly.com/yourname',
-    href: '#',
+    value: 'calendly.com/sowmyamano0130',
+    href: 'https://calendly.com/sowmyamano0130',
     color: 'from-orange-500 to-red-500',
   },
 ]
 
 const socialLinks = [
   { icon: LinkedInIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sowmya-mano-189924200/', color: 'hover:bg-[#0077B5]' },
-  { icon: TwitterIcon, label: 'Twitter/X', href: '#', color: 'hover:bg-foreground' },
-  { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/_sowmya__mano___?igsh=cGhkZ2c4MnJhenlq', color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400' },
+  // { icon: TwitterIcon, label: 'Twitter/X', href: '#', color: 'hover:bg-foreground' },
+  // { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/_sowmya__mano___?igsh=cGhkZ2c4MnJhenlq', color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400' },
+  { icon: MailIcon, label: 'Gmail', href: 'mailto:sowmyamano0130@gmail.com', color: 'hover:bg-gradient-to-br hover:from-blue-600 hover:via-blue-500 hover:to-orange-400' },
+  { icon: CalendarIcon, label: 'Calendly', href: 'https://calendly.com/sowmyamano0130', color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400' },
 ]
 
 export function ContactSection() {
