@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import { FadeInUp, FadeInLeft, FadeInRight, CountUp } from '@/components/scroll-animations'
 
 const quickFacts = [
@@ -28,6 +29,8 @@ const services = [
   },
 ]
 
+const imageUrl = "/image1.png";
+
 export function AboutSection() {
   return (
     <section id="about" className="py-20 md:py-32 relative">
@@ -48,14 +51,14 @@ export function AboutSection() {
                   Turning data into growth strategies that actually work.
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I&apos;m a results-driven Digital Marketing Analyst with over 5.5 years of experience 
-                  supporting diverse projects and driving revenue through strategic online marketing 
-                  and SEO techniques. I specialize in turning complex data into actionable insights 
+                  I&apos;m a results-driven Digital Marketing Analyst with over 5.5 years of experience
+                  supporting diverse projects and driving revenue through strategic online marketing
+                  and SEO techniques. I specialize in turning complex data into actionable insights
                   that enhance campaign performance and maximize ROI.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  I&apos;ve worked on high-impact marketing projects across the SaaS and real estate sectors, 
-                  using tools like Google Analytics, SEMrush, and HubSpot to fuel growth. My approach 
+                  I&apos;ve worked on high-impact marketing projects across the SaaS and real estate sectors,
+                  using tools like Google Analytics, SEMrush, and HubSpot to fuel growth. My approach
                   combines analytical rigor with creative strategy to deliver measurable results.
                 </p>
               </div>
@@ -65,16 +68,37 @@ export function AboutSection() {
           {/* Profile card */}
           <FadeInUp delay={100} className="md:col-span-3 lg:col-span-5">
             <div className="bg-card border border-border rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center">
-              <div className="w-28 h-28 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center mb-5 ring-2 ring-primary/20 ring-offset-4 ring-offset-card">
-                <span className="text-3xl font-bold text-primary">YN</span>
+              <div className="w-28 h-28 rounded-full overflow-hidden bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center mb-5 ring-2 ring-primary/20 ring-offset-4 ring-offset-card">
+                {
+                  (imageUrl)
+                    ?
+                    (
+                      <Image
+                        src={imageUrl}
+                        alt="Sowmyalakshmi"
+                        width={500}
+                        height={100}
+                        className="object-cover"
+                      />
+                    )
+                    :
+                    (
+                      <span className="text-3xl font-bold text-primary">SL</span>
+                    )
+                }
               </div>
-              <h3 className="text-xl font-bold text-foreground">Your Name</h3>
+
+              <h3 className="text-xl font-bold text-foreground">Sowmyalakshmi</h3>
+
               <p className="text-muted-foreground text-sm mt-1 mb-5">Digital Marketing Analyst</p>
+
               <div className="flex items-center gap-2 text-sm">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
                 </span>
+
                 <span className="text-muted-foreground">Open to opportunities</span>
               </div>
             </div>

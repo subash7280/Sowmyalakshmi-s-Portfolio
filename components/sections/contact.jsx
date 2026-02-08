@@ -90,14 +90,14 @@ const contactMethods = [
     color: 'from-teal-500 to-cyan-500',
   },
   {
-    icon: PhoneIcon,
-    title: 'Call Me',
-    description: 'Mon-Fri from 9am to 6pm',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
-    color: 'from-blue-500 to-indigo-500',
-  },
-  {
+    //   icon: PhoneIcon,
+    //   title: 'Call Me',
+    //   description: 'Mon-Fri from 9am to 6pm',
+    //   value: '+1 (555) 123-4567',
+    //   href: 'tel:+15551234567',
+    //   color: 'from-blue-500 to-indigo-500',
+    // },
+    // {
     icon: MapPinIcon,
     title: 'Location',
     description: 'Based in',
@@ -116,9 +116,9 @@ const contactMethods = [
 ]
 
 const socialLinks = [
-  { icon: LinkedInIcon, label: 'LinkedIn', href: '#', color: 'hover:bg-[#0077B5]' },
+  { icon: LinkedInIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sowmya-mano-189924200/', color: 'hover:bg-[#0077B5]' },
   { icon: TwitterIcon, label: 'Twitter/X', href: '#', color: 'hover:bg-foreground' },
-  { icon: InstagramIcon, label: 'Instagram', href: '#', color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400' },
+  { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/_sowmya__mano___?igsh=cGhkZ2c4MnJhenlq', color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400' },
 ]
 
 export function ContactSection() {
@@ -260,7 +260,7 @@ export function ContactSection() {
         </FadeInUp>
 
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {
             contactMethods?.map((method, index) => (
               <ScaleIn key={method.title} delay={index * 0.1}>
@@ -323,6 +323,7 @@ export function ContactSection() {
                     {socialLinks.map((social) => (
                       <a
                         key={social.label}
+                        target='_blank'
                         href={social.href}
                         className={`w-11 h-11 rounded-xl bg-card border border-border flex items-center justify-center transition-all duration-300 ${social.color} hover:text-background hover:border-transparent group`}
                         aria-label={social.label}

@@ -82,8 +82,8 @@ export function Header() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
-    link.download = 'Resume.pdf'
+    link.href = '/sowmyalakshmi-resume.pdf'
+    link.download = `sowmyalakshmi_resume.pdf`
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
