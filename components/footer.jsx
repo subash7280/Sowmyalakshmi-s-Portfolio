@@ -32,6 +32,30 @@ function InstagramIcon({ className }) {
   )
 }
 
+function MailIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M1.5 6.75A2.25 2.25 0 013.75 4.5h16.5A2.25 2.25 0 0122.5 6.75v10.5a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 17.25V6.75zm2.25-.75L12 12.188 20.25 6H3.75zm16.5 11.25V8.06l-7.8 5.85a.75.75 0 01-.9 0L3.75 8.06v9.19h16.5z" />
+    </svg>
+  )
+};
+
+function CalendlyIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M7.5 2.25a.75.75 0 01.75.75v.75h7.5V3a.75.75 0 011.5 0v.75h.75A2.25 2.25 0 0120.25 6v12a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h.75V3a.75.75 0 01.75-.75zM5.25 9v9A.75.75 0 006 18.75h12a.75.75 0 00.75-.75V9H5.25zm9.78 3.47a.75.75 0 00-1.06-1.06l-2.72 2.72-1.22-1.22a.75.75 0 10-1.06 1.06l1.75 1.75a.75.75 0 001.06 0l3.25-3.25z" />
+    </svg>
+  )
+};
+
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
@@ -43,8 +67,10 @@ const navLinks = [
 
 const socialLinks = [
   { icon: LinkedInIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sowmya-mano-189924200/' },
-  { icon: TwitterIcon, label: 'Twitter', href: '#' },
-  { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/_sowmya__mano___?igsh=cGhkZ2c4MnJhenlq' },
+  // { icon: TwitterIcon, label: 'Twitter', href: '#' },
+  // { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/_sowmya__mano___?igsh=cGhkZ2c4MnJhenlq' },
+  { icon: MailIcon, label: 'Gmail', href: 'mailto:sowmyamano0130@gmail.com' },
+  { icon: CalendlyIcon, label: 'Calendly', href: 'https://calendly.com/sowmyamano0130' },
 ]
 
 export function Footer() {

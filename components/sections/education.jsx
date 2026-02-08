@@ -20,16 +20,27 @@ function BookOpenIcon({ className }) {
 
 const education = [
   {
-    degree: 'Master of Business Administration (MBA)',
-    field: 'Marketing Specialization',
-    institution: 'University Name',
-    location: 'City, State',
-    period: '2018 - 2020',
+    degree: 'Bachelor Of Engineering',
+    field: 'Electronics and Communication',
+    institution: 'Jansons Institute of Technology, Coimbatore',
+    location: 'Coimbatore, Tamil Nadu',
+    period: '2016 - 2020',
     highlights: [
-      'Specialized in Digital Marketing and Analytics',
-      'Graduated with Distinction (GPA: 3.8/4.0)',
-      'Thesis: "Impact of Data-Driven Marketing on ROI"',
-      'Marketing Club President'
+      'Specialized in Electronics and Communication',
+      'Graduated (GPA: 7.9/10.0)',
+      'Thesis: "Agricultural Plant Disease Tracking & Prevention"',
+    ]
+  },
+  {
+    degree: 'Higher Secondary Certificate (HSC)',
+    // field: 'Business Management',
+    institution: 'Montfort Matric Hr Sec School, Kolathur',
+    location: 'Salem, Tamil Nadu',
+    period: '2014 - 2016',
+    highlights: [
+      'Biology',
+      'Mathematics',
+      'Science',
     ]
   },
   {

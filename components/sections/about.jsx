@@ -29,7 +29,7 @@ const services = [
   },
 ]
 
-const imageUrl = "/image1.png";
+const imageUrl = "/image2.jpeg";
 
 export function AboutSection() {
   return (
